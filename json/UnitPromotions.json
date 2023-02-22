@@ -10,6 +10,68 @@
 		"uniques": ["[+1] Sight", "May enter foreign tiles without open borders"],
 		"unitTypes": ["Civilian"]
 	},
+	//Effects
+	{
+		"name": "Stealth",
+		"uniques": ["Invisible to non-adjacent units"]
+	},
+	{
+		"name": "Amphibious",
+		"uniques": ["Normal vision when embarked", "Defense bonus when embarked"]
+	},
+	{
+		"name": "Hovering",
+		"uniques": ["[0] Movement point cost to disembark","[0] Movement point cost to embark","Ignores terrain cost"]
+	},
+	{
+		"name": "Rocket Launcher",
+		"uniques": ["[+35]% Strength <vs [Cyber] units>","[+75]% Strength <vs cities>"]
+	},
+	{
+		"name": "Firewall",
+		"uniques": ["[+33]% Strength <when defending>"]
+	},
+	{
+		"name": "Heat Sensor",
+		"uniques": ["[+200]% Strength <vs [Stealth Bomber] units>"]
+	},
+	{
+		"name": "Implants",
+		"uniques": ["[+25]% Strength <vs [Wounded] units>"]
+	},
+	{
+		"name": "Scan Visor",
+		"uniques": ["Can see invisible [All] units"]
+	},
+	{
+		"name": "Energy Weapons",
+		"uniques": ["[+40]% Strength <vs [Bio] units>","[+40]% Strength <vs [Cyber] units>"]
+	},
+	{
+		"name": "Gravity Generator",
+		"uniques": ["[-25]% Strength for enemy [Military] units in adjacent [All] tiles"]
+	},
+	{
+		"name": "In Orbit",
+		"uniques": ["[+25]% Strength <vs [Land] units>"]
+	},
+	{
+		"name": "Energy Shield",
+		"uniques": ["[+20]% Strength <when defending>","[+20]% Strength <vs [Ranged] units>","[+100]% Strength <vs [Missile] units>"]
+	},
+	{
+		"name": "Teleportation",
+		"uniques": ["May Paradrop up to [100] tiles from inside friendly territory","May withdraw before melee ([20]%)"]
+	},
+	{
+		"name": "Support Unit",
+		"uniques": ["Cannot attack"]
+	},
+	{
+		"name": "Skirmish",
+		"uniques": ["May withdraw before melee ([33]%)"]
+	},
+
 
 	//Infantry
 	{
