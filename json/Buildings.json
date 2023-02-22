@@ -1,4 +1,181 @@
 [
+ //Resources Edited
+  {
+    "name": "Perfumery",
+    "cost": "200",
+    "maintenance": 1,
+    "requiredNearbyImprovedResources": [
+      "Perfume"
+    ],
+    "resourceBonusStats": {
+      "gold": 1,
+      "happiness": 1,
+      "culture": 1
+    },
+    "hurryCostModifier": 20,
+    "requiredTech": "Chemistry"
+  },
+  {
+        "name": "Camel Drawn Wagons",
+        "hurryCostModifier": 25,
+        "happiness": 2,
+        "uniques": ["[+1 Happiness] for every [3] population [in this city]", "[+2] [Gold] for every [Trade Route] [in this city]","[+2] [Food] for every [Trade Route] [in this city]", "Consumes [1] [Camel]"],
+        "requiredTech": "Animal Husbandry"
+},
+  {
+    "name": "Gemcutter",
+    "cost": "100",
+    "maintenance": 1,
+    "requiredNearbyImprovedResources": [
+      "Lapis Lazuli",
+      "Gems",
+      "Diamond",
+      "Amber",
+      "Jade"
+    ],
+    "resourceBonusStats": {
+      "gold": 1,
+      "happiness": 1,
+      "culture": 1
+    },
+    "hurryCostModifier": 20,
+    "requiredTech": "Machinery"
+  },
+  {
+    "name": "Censer Maker",
+    "cost": "150",
+    "maintenance": 1,
+    "requiredNearbyImprovedResources": [
+      "Incense",
+      "Tobacco"
+    ],
+    "resourceBonusStats": {
+      "gold": 1,
+      "happiness": 1,
+      "culture": 1
+    },
+    "hurryCostModifier": 20,
+    "requiredTech": "Theology"
+  },
+  {
+    "name": "Oil Refinery",
+    "cost": "450",
+    "maintenance": 2,
+    "requiredNearbyImprovedResources": [
+      "Oil"
+    ],
+    "resourceBonusStats": {
+      "gold": 3,
+      "production": 3
+    },
+    "hurryCostModifier": 20,
+    "requiredTech": "Biology"
+  },
+  {
+    "name": "Grocer",
+    "cost": "200",
+    "maintenance": 2,
+    "requiredNearbyImprovedResources": [
+      "Citrus",
+      "Bananas",
+      "Dates",
+      "Melon",
+      "Pineapple",
+      "Apple",
+      "Blueberry",
+      "Strawberry",
+      "Mango",
+      "Coconut",
+      "Spices",
+      "Sugar",
+      "Salt",
+      "Cocoa",
+      "Truffles",
+      "Crab",
+      "Shrimp",
+      "Oyster",
+      "Fish",
+      "Shark",
+      "Kelp",
+      "Moringa",
+      "Potato",
+      "Tomato",
+      "Carrot",
+      "Bell Pepper",
+      "Corn",
+      "Pumpkin",
+      "Sweet Potato",
+      "Lobster",
+      "Chili",
+      "Common Pepper",
+      "Onion",
+      "Garlic",
+      "Sheep",
+      "Cattle",
+      "Goat",
+      "Nut",
+      "Watermelon",
+      "Chicken",
+      "Honey",
+      "Purple Yam",
+      "Taro",
+      "Bitter Gourd"
+    ],
+    "resourceBonusStats": {
+      "food": 1
+    },
+    "hurryCostModifier": 20,
+    "requiredTech": "Banking"
+  },
+  {
+    "name": "Textile Mill",
+    "cost": "300",
+    "maintenance": 2,
+    "requiredNearbyImprovedResources": [
+      "Flax",
+      "Cotton",
+      "Silk",
+      "Furs",
+      "Dyes"
+    ],
+    "resourceBonusStats": {
+      "production": 2
+    },
+    "hurryCostModifier": 20,
+    "requiredTech": "Economics"
+  },
+  {
+    "name": "Geothermal Plant",
+    "cost": "400",
+    "maintenance": 3,
+    "resourceBonusStats": {
+      "production": 3
+    },
+    "percentStatBonus": {
+      "production": 15
+    },
+    "hurryCostModifier": 20,
+    "requiredTech": "Ecology"
+  },
+  {
+    "name": "Clothing Store",
+    "cost": "300",
+    "maintenance": 2,
+    "requiredNearbyImprovedResources": [
+      "Flax",
+      "Cotton",
+      "Silk",
+      "Furs",
+      "Dyes"
+    ],
+    "resourceBonusStats": {
+      "culture": 1,
+      "happiness": 1
+    },
+    "hurryCostModifier": 20,
+    "requiredBuilding": "Textile Mill",
+    "requiredTech": "Economics"
+  }
 //Ancient
     {
 		"name": "Palace",
