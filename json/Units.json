@@ -20,6 +20,17 @@
 			"Requires at least [2] population"],
 		"hurryCostModifier": 20
 	},
+	  {
+		"name": "Caravan",
+		"unitType": "Civilian",
+		"movement": 3,
+		"cost": 80,
+		"requiredResource": "Camel",
+		"requiredTech": "Animal Husbandry",
+		"uniques": ["Founds a new city", "Excess Food converted to Production when under construction",
+			"Requires at least [2] population","May withdraw before melee ([60]%)","Provides [20] Food when epended"],
+		"hurryCostModifier": 20
+	},
 	{
 		"name": "Scout",
 		"unitType": "Recon",
@@ -497,6 +508,20 @@
 		"attackSound": "horse"
 	},
 	{
+		"name": "Camel Warrior",
+		"unitType": "Heavy Cavalry",
+		"movement": 4,
+		"strength": 13,
+		"cost": 75,
+		"requiredTech": "Horseback Riding",
+		"requiredResource": "Camel",
+		"upgradesTo": "Heavy Camel Warrior",
+		"obsoleteTech": "Chivalry",
+		"uniques": ["No defensive terrain bonus","Can move after attacking","Penalty vs City 33%"],
+		"hurryCostModifier": 20,
+		"attackSound": "metalhit"
+	},
+	{
 		"name": "Companion Cavalry",
 		"unitType": "Light Cavalry",
 		"uniqueTo": "Greece",
@@ -571,6 +596,21 @@
 		"obsoleteTech": "Chivalry",
 		"requiredResource": "Horses",
 		"uniques": ["No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Camel Bowman",
+		"unitType": "Ranged Cavalry",
+		"movement": 4,
+		"strength": 12,
+		"rangedStrength": 14,
+		"cost": 75,
+		"requiredTech": "Horseback Riding",
+		"requiredResource": "Camel",
+		"upgradesTo": "Heavy Camel Bowman",
+		"obsoleteTech": "Machinery",
+		"uniques": ["No defensive terrain bonus","Can move after attacking","Penalty vs City 33%"],
+		"hurryCostModifier": 20,
 		"attackSound": "arrow"
 	},
 	{
@@ -892,6 +932,20 @@
 		"attackSound": "horse"
 	},
 	{
+		"name": "Heavy Camel Warrior",
+		"unitType": "Heavy Cavalry",
+		"movement": 4,
+		"strength": 21,
+		"cost": 120,
+		"requiredTech": "Chivalry",
+		"requiredResource": "Camel",
+		"upgradesTo": "Cuirasser",
+		"obsoleteTech": "Military Science",
+		"uniques": ["No defensive terrain bonus","Can move after attacking","Penalty vs City 33%"],
+		"hurryCostModifier": 20,
+		"attackSound": "metalhit"
+	},
+	{
 		"name": "Medieval Lancer",
 		"unitType": "Counter Cavalry",
 		"movement": 5,
@@ -919,6 +973,21 @@
 		"attackSound": "horse"
 	},
 	{
+		"name": "Heavy Camel Bowman",
+		"unitType": "Ranged Cavalry",
+		"movement": 4,
+		"strength": 16,
+		"rangedStrength": 20,
+		"cost": 120,
+		"requiredTech": "Machinery",
+		"requiredResource": "Camel",
+		"upgradesTo": "Horse Artillery",
+		"obsoleteTech": "Military Science",
+		"uniques": ["No defensive terrain bonus","Can move after attacking","Penalty vs City 33%"],
+		"hurryCostModifier": 20,
+		"attackSound": "arrow"
+	},
+{
 		"name": "Camel Archer",
 		"unitType": "Ranged Cavalry",
 		"replaces": "Heavy Horse Archer",
@@ -928,7 +997,7 @@
 		"rangedStrength": 21,
 		"cost": 145,
 		"requiredTech": "Chivalry",
-		"requiredResource": "Horses",
+		"requiredResource": "Camel",
 		"upgradesTo": "Horse Artillery",
 		"obsoleteTech": "Metallurgy",
 		"uniques": ["No defensive terrain bonus"],
@@ -2667,6 +2736,213 @@
 		"obsoleteTech": "Mobile Tactics",
 		"attackSound": "tankshot"
 	},
+	 {
+		"name": "Tank Hunter",
+		"unitType": "Counter Cavalry",
+		"movement": 4,
+		"strength": 80,
+		"cost": 400,
+		"requiredTech": "Computers",
+		"requiredResource": "Aluminum",
+		"uniques": ["Never appears as a Barbarian unit", "[+60]% Strength <vs [Heavy Cavalry] units>", "[+50]% Strength <vs [Light Cavalry] units>", "[+50]% Strength <vs [Ranged Cavalry] units> <when attacking>", "[+50]% Strength <vs [Counter Cavalry] units>", "[-25]% Strength <vs cities>"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Rocket Infantry",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"interceptRange": 2,
+		"strength": 60,
+		"cost": 400,
+		"requiredTech": "Rocketry",
+		"requiredResource": "Copper",
+		"uniques": ["[50]% chance to intercept air attacks","[+50]% Strength <vs [Heavy Cavalry] units>", "[+50]% Strength <vs [Light Cavalry] units>", "[+50]% Strength <vs [Ranged Cavalry] units> <when attacking>", "[+50]% Strength <vs [Counter Cavalry] units>",
+			"[+50]% Strength <vs [Air Helicopter] units>", "+[25]% combat bonus in [Hill]", "+[25]% combat bonus in [Forest]",
+			"+[25]% combat bonus in [Jungle]", "[-25]% Strength <vs cities>", "Never appears as a Barbarian unit"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Flaktank",
+		"unitType": "Light Cavalry",
+		"movement": 4,
+		"interceptRange": 2,
+		"strength": 75,
+		"cost": 400,
+		"requiredTech": "Computers",
+		"requiredResource": "Aluminum",
+		"uniques": ["[100]% chance to intercept air attacks", "[+30]% Strength <vs [Air Helicopter] units>", 
+			    "[+30]% Strength <vs [Infantry] units>", "[+150]% Strength <vs [Ranged Gunpowder] units>", "[-25]% Strength <vs cities>", 
+			    "[-30]% Strength <vs [Heavy Cavalry] units>", "[-30]% Strength <vs [Light Cavalry] units>", "[-30]% Strength <vs [Ranged Cavalry] units> <when attacking>", "[-30]% Strength <vs [Counter Cavalry] units>",  "Can move after attacking", "Never appears as a Barbarian unit"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Battlecarrier",
+		"unitType": "Naval Ranged",
+		"movement": 5,
+		"strength": 85,
+		"rangedStrength": 85,
+		"range": 3,
+		"interceptRange": 2,
+		"cost": 500,
+		"requiredResource": "Oil",
+		"requiredTech": "Robotics",
+		"uniques": ["Can carry [2] [Air] units","[100]% chance to intercept air attacks", 
+			    "Never appears as a Barbarian unit"],
+		"promotions": ["Indirect Fire"],
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Submarine Carrier",
+		"unitType": "Naval Submarine",
+		"movement": 6,
+		"strength": 50,
+		"range": 3,
+		"rangedStrength": 85,
+		"cost": 500,
+		"requiredTech": "Telecommunications",
+		"requiredResource": "Uranium",
+		"uniques": ["[+75]% Strength <when attacking>", "Invisible to others", 
+			"Can only attack [Water] tiles", "Can attack submarines", "Can enter ice tiles", "[+1] Sight", "Can carry [2] [Air] units", 
+			   "Never appears as a Barbarian unit"],
+		"attackSound": "torpedo"
+	},
+	{
+		"name": "Seacopter",
+		"unitType": "Air Bomber",
+		"movement": 6,
+		"strength": 65,
+		"rangedStrength": 65,
+		"range": 8,
+		"cost": 350,
+		"requiredTech": "Computers",
+		"requiredResource": "Oil",
+		"uniques": ["Can attack submarines","[+100]% Strength <vs [Submarine] units>","Can move after attacking", "Can see invisible [Submarine] units", 
+			    "Never appears as a Barbarian unit"],
+		"attackSound": "bombing"
+	},
+	{
+"name": "Mothership",
+"unitType": "Air Helicopter",
+"range": 1,
+"movement": 3,
+"strength": 70,
+"rangedStrength": 55,
+"cost": 450,
+"requiredTech": "Plastics",
+"uniques": ["Can carry [1] [Air] units",
+		"Can carry [2] [Air Missile] units",
+		"Never appears as a Barbarian unit",
+		"All tiles cost 1 movement",
+		"Can see over obstacles", "Ignores zone of control",
+		"[+1] Sight","Consumes [1] [Secret Project]","Consumes [2] [Oil]"]
+},
+
+{
+"name": "Support Helicopter",
+"unitType": "Air Helicopter",
+"movement": 6,
+"strength": 50,
+"cost": 375,
+"requiredTech": "Telecommunications",
+"uniques": ["Cannot attack",
+		"Never appears as a Barbarian unit",
+		"All tiles cost 1 movement",
+		"All adjacent units heal [+20] HP when healing",
+		"[+50]% Strength <in [Helicopter Base] tiles> <when defending>"]
+	"requiredResource": "Fuel"
+},
+
+{
+"name": "Land Carrier",
+"unitType": "Land Carrier",
+"range": 2,
+"movement": 1,
+"strength": 70,
+"rangedStrength": 90,
+"cost": 450,
+"requiredTech": "Mobile Tactics",
+"uniques": ["Can carry [2] [Air] units",
+		"Can carry [2] [Air Missile] units",
+		"Never appears as a Barbarian unit","Consumes [1] [Secret Project]","Consumes [2] [Uranium]"],
+},
+
+
+{
+"name": "Naval Helicopter",
+"unitType": "Air Helicopter",
+"movement": 6,
+"strength": 75,
+"cost": 450,
+"requiredTech": "Robotics",
+"uniques": ["Never appears as a Barbarian unit",
+		"All tiles cost 1 movement",
+		"[+40%] strength <vs [Water] units>",
+		"Defense bonus when embarked",
+		"[+50]% Strength <in [Helicopter Base] tiles> <when defending>"],
+"promotions": ["Amphibious"],
+"requiredResource": "Fuel"
+},
+
+{
+"name": "Heavy Duty Helicopter",
+"unitType": "Helicopter",
+"movement": 5,
+"strength": 85,
+"interceptRange": 1,
+"range": 1,
+"rangedStrength": 85,
+"cost": 475,
+"requiredTech": "Advanced Ballistics",
+"uniques": ["Never appears as a Barbarian unit",
+		"All tiles cost 1 movement",
+		"Can carry [1] [Guided Missile] units",
+		"[25]% chance to intercept air attacks",
+		"No defensive terrain bonus",
+		"[+50]% Strength <in [Helicopter Base] tiles> <when defending>"],
+"promotions": ["Indirect Fire"]
+	"requiredResource": "Fuel"
+},
+
+{
+"name": "Quick Ops Helicopter",
+"unitType": "Helicopter",
+"movement": 5,
+"strength": 65,
+"cost": 325,
+"requiredTech": "Mobile Tactics",
+"uniques": ["Never appears as a Barbarian unit",
+		"All tiles cost 1 movement",
+		"Can move after attacking",
+		"[+50]% Strength <when attacking>",
+		"[+50]% Strength <in [Helicopter Base] tiles> <when defending>"],
+"requiredResource": "Fuel"
+},
+
+
+{
+"name": "Gas Missile",
+"unitType": "Missile",
+"range": 12,
+"movement": 1,
+"strength": 150,
+"rangedStrength": 150,
+"cost": 400,
+"requiredTech": "Advanced Ballistics",
+"requiredResource": "Biohazard Matter",
+},
+{
+"name": "Napalm Missile",
+"unitType": "Missile",
+"range": 8,
+"movement": 1,
+"strength": 200,
+"rangedStrength": 200,
+"cost": 500,
+"requiredTech": "Advanced Ballistics",
+"uniques": ["Blast radius [1]",
+		"Consumes [2] [Biohazard Matter]",
+		"Nuclear weapon of Strength [1]"]
+},
 
 	// Information Era
 	{
@@ -3063,6 +3339,39 @@
 		"attackSound": "bombing"
 	},
 //Future
+{
+		"name": "Enhanced Infantry",
+		"unitType": "Infantry",
+		"movement": 3,
+		"strength": 95,
+		"cost": 350,
+		"requiredTech": "Nanotechnology",
+		"requiredResource": "Titanium",
+		"uniques": ["Can move after attacking","No defensive terrain bonus"],
+		"hurryCostModifier": 20
+	},
+{
+		"name": "Enhanced Recon Troop",
+		"unitType": "Recon",
+		"movement": 4,
+		"strength": 90,
+		"cost": 350,
+		"requiredTech": "Nanotechnology",
+		"requiredResource": "Titanium",
+		"uniques": ["+1 Visibility Range","Ignores terrain cost"],
+		"hurryCostModifier": 20
+	},
+	{
+		"name": "Assault Hovercraft",
+		"unitType": "Light Cavalry",
+		"movement": 4,
+		"strength": 110,
+		"cost": 400,
+		"requiredTech": "Nanotechnology",
+		"requiredResource": "Titanium",
+		"uniques": ["Can move after attacking","Ignores terrain cost"],
+		"hurryCostModifier": 20
+	}
     {
 		"name": "Bio-Infantry",
 		"unitType": "Infantry",
