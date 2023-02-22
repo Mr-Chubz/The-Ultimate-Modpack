@@ -386,6 +386,26 @@
 		"cost": 500,
 		"uniques": ["Provides [4] [Power]","Provides [1] [Power] <after discovering [Clean Energy]>","Provides [1] [Power] <if [Electrical Corporation] is constructed>","Must have an owned [Power Plant] within [3] tiles","Destroyed when the city is captured"]
 	},
+{
+"name": "Oil Refinery",
+"production": 3,
+"cost": 300,
+"specialistSlots": {"Engineer": 1},
+"greatPersonPoints": {"Great Engineer": 1},
+"maintenance": 3,
+"uniques": ["Consumes [3] [Oil]", "Provides [2] [Fuel]"],
+"requiredTech": "Combustion"
+},
+
+{
+"name": "Chemical Weapons Lab",
+"science": 2,
+"cost": 275,
+"specialistSlots": {"Scientist": 1},
+"maintenance": 2,
+"uniques": ["Provides [2] [Biohazard Matter]"],
+"requiredTech": "Biology"
+}
 	//Information
 	{
 		"name": "Foreign Center",
