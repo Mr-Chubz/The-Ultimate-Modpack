@@ -178,7 +178,7 @@
         "uniques": ["Self-destructs when attacking", "Ballistic"]
     },
     {
-        "name": "Air Nuke Missile",
+        "name": "Nuke Missile",
         "movementType": "Air",
         "uniques": ["Self-destructs when attacking", "Ballistic"]
     },
