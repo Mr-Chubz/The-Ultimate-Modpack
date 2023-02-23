@@ -140,7 +140,7 @@
 			},
 			{
 				"name": "Discovery",
-				"uniques": ["[+1 Happiness] from every [Industry]",
+				"uniques": ["[+1 Happiness] from every [Industry]"],
 				"requires": ["Joint Projects"],
 				"row": 3,
 				"column": 2
