@@ -28,7 +28,7 @@
 		"requiredResource": "Camel",
 		"requiredTech": "Animal Husbandry",
 		"uniques": ["Founds a new city", "Excess Food converted to Production when under construction",
-			"Requires at least [2] population","May withdraw before melee ([60]%)","Provides [20] Food when epended"],
+			"Requires at least [2] population","May withdraw before melee ([60]%)","Provides [20] Food when expended"],
 		"hurryCostModifier": 20
 	},
 	{
